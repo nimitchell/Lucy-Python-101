@@ -1,7 +1,5 @@
 
-
-
-if __name__ == "__main__":
+def convert_temp():
     num = input("please input a number")
     num = int(num)
     result = ""  # define result in main global scope
@@ -20,3 +18,7 @@ if __name__ == "__main__":
         exit()  # stop the program before it prints out result
 
     print(result)  # Print the updated value of result
+
+
+if __name__ == "__main__":
+    convert_temp()
