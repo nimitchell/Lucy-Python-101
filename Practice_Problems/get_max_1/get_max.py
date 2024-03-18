@@ -32,31 +32,21 @@ def get_max():
 
 """
 ######################################################################################################################################
-These test functions are used to test the code you write, you can ignore them, but when you run main these are the tests that will run
+Extra Credit, impliment get_max() using recursion (a fcuntion that calls itself
 ######################################################################################################################################
 """
-def test_get_max_from_list():
-    passed = ["FAILED", "PASSED"]
-    # normal list
-    test1 = get_max_from_list([1, 2, 3, 4, 5])
-    print(f"test1 {passed[test1 == 5]}\n", f"expected:5", f"got:{test1}\n")
+def get_max_from_list_rec(num_list):
+    # use the get_list_from_user function you wrote above to get a list of numbers from the user
 
-    # list with negative
-    test2 = get_max_from_list([1, 2, 3, 4, -5])
-    print(f"test2 {passed[test2 == 4]}\n", f"expected:4", f"got:{test2}\n")
+    # use a similar process to what you did above but use recursion instead of a loop (this function call's itself)
 
-    # list in descending order
-    test3 = get_max_from_list([5, 4, 3, 2, 1])
-    print(f"test3 {passed[test3 == 5]}\n", f"expected:5", f"got:{test3}\n")
+    # return the largest number bellow
+    return 0
 
-    # empty list
-    test4 = get_max_from_list([])
-    print(f"test4 {passed[test4 == 0]}\n", f"expected:0", f"got:{test4}\n")
-
-    # list with duplicates
-    test5 = get_max_from_list([1, 8, 8, 4])
-    print(f"test5 {passed[test5 == 8]}\n", f"expected:8", f"got:{test5}\n")
-
-
-test_get_max_from_list()
-get_max()
+def get_max_rec():
+    # user get_list_from_user to get a list of numbers from the user
+    user_numbers = get_list_from_user()
+    # get the max number from this list
+    max_num = get_max_from_list_rec(user_numbers)
+    # print out the max number
+    print(max_num)
