@@ -4,6 +4,6 @@ Use pandas to make a dataframe of the cat icecream csv, https://figshare.com/art
 
 Then group the cats by color, and print out the favorite icecream flavor of each color of cat
 
-Finaly use matplotlib.pyplot to graph popularity of different ice cream flavors for orange cats
+Finaly use matplotlib.pyplot to graph popularity of different ice cream flavors for black cats
 ######################################################################################################################################
 """
